@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24-7</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .clicked {
+      background-color: rgb(59, 59, 59);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="buy" class="container" onclick="buy()">Köp</div>
+  <div id="sell" class="container" onclick="sell()">Sälj</div>
+  <script src="check.js"></script>
+</body>
+
+</html>
