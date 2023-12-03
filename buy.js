@@ -134,8 +134,6 @@ function showInterestModal() {
   });
 }
 
-
-
 // Stäng modalen fönstret 
 function closeModal() {
   let modalContainer = $('.modal-container');
