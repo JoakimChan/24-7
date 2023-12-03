@@ -142,6 +142,17 @@ function closeModal() {
   }
 }
 
+// Funktion för att hämta filtrerade hus information via JSON Serverns API 
+function getFilteredHouses(filters) {
+  let query = Object.keys(filters)
+    .filter(key => filters[key] !== '')
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(filters[key])}`)
+    .join('&');
+  return fetch(`http://localhost:3000/houses?${query}`)
+    .then(response => response.json())
+    .catch(error => console.error('Fel vid hämtning av filtrerade hus:', error));
+}
+
 
 // När sidan laddas så körs funktionen buy
 $(document).ready(function () {
