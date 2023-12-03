@@ -88,7 +88,7 @@ export default function buy() {
 
 }
 
-// Test visa ett modal fönster med hus information vid mus klick på bild 
+// Test visa ett modal fönster med "hus information" vid mus klick på bild 
 function showModal(title, content, hus) {
   let modalContainer = $('<div class="modal-container"><div class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal()">&times;</span><div class="modal-body"><h2>' + title + '</h2>' + content + '</div></div></div></div>');
   modalContainer.css('display', 'flex');
@@ -109,6 +109,32 @@ function showModal(title, content, hus) {
     closeModal();
   });
 }
+
+// Test visa ett modal fönstret för "visa intresse" för ett hus
+function showInterestModal() {
+  let modalContent = '<h3>\
+    <form id="interestForm">\
+      <label for="message">Meddelande:</label><br>\
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>\
+      <label for="email">Din E-post:</label><br>\
+      <input type="email" id="email" name="email"><br>\
+      <input type="submit" value="Skicka Meddelande">\
+    </form>';
+
+  // Visa en modal för att visa intresse med formulär
+  showModal('Visa Intresse', modalContent);
+
+  let interestForm = $('#interestForm');
+
+  // Hantera formulärsubmission för att visa intresse
+  interestForm.on('submit', function (e) {
+    e.preventDefault();
+    // Logik för att hantera och skicka meddelandet
+    closeModal();
+  });
+}
+
+
 
 // Stäng modalen fönstret 
 function closeModal() {
