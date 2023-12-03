@@ -153,6 +153,34 @@ function getFilteredHouses(filters) {
     .catch(error => console.error('Fel vid hämtning av filtrerade hus:', error));
 }
 
+// Lägg till lyssnare för filterformuläret för att uppdatera sidan med filtrerade hus
+$(document).on('submit', '#filterForm', function (e) {
+  e.preventDefault();
+  const filters = {
+    type: $('#typeFilter').val(),
+    price: $('#priceFilter').val(),
+    rooms: $('#roomsFilter').val(),
+    area: $('#areaFilter').val()
+  };
+  getFilteredHouses(filters).then(houses => {
+    updateHousesDisplay(houses);
+  });
+});
+
+
+// Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter vall kan raderas senare 
+const testFilters = {
+  type: 'Lägenhet',
+  // price: '900000',  
+  rooms: '3',
+  // area: '87'  
+};
+
+getFilteredHouses(testFilters).then(houses => {
+  updateHousesDisplay(houses);
+});
+
+
 
 // När sidan laddas så körs funktionen buy
 $(document).ready(function () {
