@@ -167,6 +167,59 @@ $(document).on('submit', '#filterForm', function (e) {
   });
 });
 
+// Funktion för att uppdatera visning av hus när filter används """ Se över kod består till stor del av buy funktionen bör återanvända gemensam kod bättre i funktion """
+function updateHousesDisplay(houses) {
+  $('.hus-container').empty();
+
+  houses.forEach(hus => {
+    let imagePath = hus.image || 'home page house.jpg';
+
+    // Skapa husinformationselement
+    let husInfo = $(`<div class="hus-info" data-id="${hus.id}" style="position: relative;">
+                        <img src="${imagePath}" alt="Bild av ${hus.type}" class="hus-bild" style="width:200px;height:200px;cursor:pointer;">
+                        <div class="buttons-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 1;">
+                          <button class="btn btn-warning redigera-btn">Redigera</button>
+                          <button class="btn btn-danger radera-btn">Radera</button>
+                        </div>
+                     </div>`);
+
+    // Händelser för att visa knapparna när musen hoverar
+    let buttonsContainer = husInfo.find('.buttons-container');
+    husInfo.on('mouseenter', function () {
+      buttonsContainer.show();
+    }).on('mouseleave', function () {
+      buttonsContainer.hide();
+    });
+
+    // Händelse för att visa detaljerad information om huset vid klick
+    let husBild = husInfo.find('.hus-bild');
+    husBild.on('click', function () {
+      let modalContent = `<p>Typ: ${hus.type}</p>
+                          <p>Utgångspris: ${hus.price}</p>
+                          <p>Antal rum: ${hus.rooms}</p>
+                          <p>Boarea: ${hus.area}</p>`;
+
+      showModal(hus.address, modalContent, hus);
+    });
+
+    // Händelser för Redigera och Radera-knappar
+    let redigeraButton = husInfo.find('.redigera-btn');
+    let raderaButton = husInfo.find('.radera-btn');
+    redigeraButton.on('click', function (event) {
+      event.stopPropagation();
+      showEditModal(hus);
+    });
+    raderaButton.on('click', function (event) {
+      event.stopPropagation();
+      deleteHouse(hus);
+    });
+
+    // Lägg till husinformationselement i behållaren
+    $('.hus-container').append(husInfo);
+  });
+}
+
+
 
 // Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter vall kan raderas senare 
 const testFilters = {
