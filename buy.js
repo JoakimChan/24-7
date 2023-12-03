@@ -88,7 +88,7 @@ export default function buy() {
 
 }
 
-// Test visa ett modal fönster med titel och innehåll vid 
+// Test visa ett modal fönster med hus information vid mus klick på bild 
 function showModal(title, content, hus) {
   let modalContainer = $('<div class="modal-container"><div class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal()">&times;</span><div class="modal-body"><h2>' + title + '</h2>' + content + '</div></div></div></div>');
   modalContainer.css('display', 'flex');
@@ -110,7 +110,16 @@ function showModal(title, content, hus) {
   });
 }
 
-// När sidan laddas  så körs funktionen buy
+// Stäng modalen fönstret 
+function closeModal() {
+  let modalContainer = $('.modal-container');
+  if (modalContainer.length) {
+    modalContainer.hide().remove();
+  }
+}
+
+
+// När sidan laddas så körs funktionen buy
 $(document).ready(function () {
   buy();
 });
