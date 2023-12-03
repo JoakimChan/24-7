@@ -14,9 +14,7 @@ const users = [
     number: 112
   }
 ]
-
-
-function ValidLogin(username, password) {
+export default function login(username, password) {
   for (let i = 0; i < users.length; i++) {
     if (users[i].username === username & users[i].password === password) {
       return true;
@@ -24,13 +22,10 @@ function ValidLogin(username, password) {
   }
   return false;
 }
-
-
 let username = "admin"
 let password = 4321
 
-
-if (ValidLogin(username, password)) {
+if (login(username, password)) {
   console.log("Welcome", username)
 }
 else {

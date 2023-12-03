@@ -1,0 +1,164 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "type": "Hus",
+      "address": "Topvägen 41",
+      "price": "1000000",
+      "rooms": "4",
+      "area": "130"
+    },
+    {
+      "id": 2,
+      "type": "Lägenhet",
+      "address": "Kunskapsvägen 50",
+      "price": "750000",
+      "rooms": "2",
+      "area": "75"
+    },
+    {
+      "id": 3,
+      "type": "Villa",
+      "address": "Villaville kulla 2",
+      "price": "1500000",
+      "rooms": "5",
+      "area": "180"
+    },
+    {
+      "id": 4,
+      "type": "Hus",
+      "address": "Mariegatan 75",
+      "price": "900000",
+      "rooms": "3",
+      "area": "90"
+    },
+    {
+      "id": 5,
+      "type": "Lägenhet",
+      "address": "Torevägen 58",
+      "price": "1000000",
+      "rooms": "4",
+      "area": "110"
+    },
+    {
+      "id": 6,
+      "type": "Villa",
+      "address": "Kalasvägen 23",
+      "price": "1100000",
+      "rooms": "4",
+      "area": "140"
+    },
+    {
+      "id": 7,
+      "type": "Hus",
+      "address": "Elvägen 1",
+      "price": "1700000",
+      "rooms": "6",
+      "area": "190"
+    },
+    {
+      "id": 8,
+      "type": "Lägenhet",
+      "address": "Technogatan 30",
+      "price": "1000000",
+      "rooms": "3",
+      "area": "90"
+    },
+    {
+      "id": 9,
+      "type": "Villa",
+      "address": "Lockelookvägen 53",
+      "price": "1400000",
+      "rooms": "4",
+      "area": "110"
+    },
+    {
+      "id": 10,
+      "type": "Hus",
+      "address": "Triptraptrullgatan 10",
+      "price": "800000",
+      "rooms": "3",
+      "area": "80"
+    },
+    {
+      "id": 11,
+      "type": "Lägenhet",
+      "address": "Skyrocketvägen 48",
+      "price": "950000",
+      "rooms": "3",
+      "area": "79"
+    },
+    {
+      "id": 12,
+      "type": "Villa",
+      "address": "Booleangatan 55",
+      "price": "1200000",
+      "rooms": "4",
+      "area": "100"
+    },
+    {
+      "id": 13,
+      "type": "Hus",
+      "address": "Bergodalbanevägen 40",
+      "price": "1500000",
+      "rooms": "4",
+      "area": "130"
+    },
+    {
+      "id": 14,
+      "type": "Lägenhet",
+      "address": "Muffingatan 21",
+      "price": "650000",
+      "rooms": "2",
+      "area": "55"
+    },
+    {
+      "id": 15,
+      "type": "Villa",
+      "address": "Dragondalsgatan",
+      "price": "1200000",
+      "rooms": "3",
+      "area": "100"
+    },
+    {
+      "id": 16,
+      "type": "Hus",
+      "address": "Krokodilvägen 39",
+      "price": "900000",
+      "rooms": "3",
+      "area": "90"
+    },
+    {
+      "id": 17,
+      "type": "Lägenhet",
+      "address": "Spacevägen",
+      "price": "900000",
+      "rooms": "3",
+      "area": "87"
+    },
+    {
+      "id": 18,
+      "type": "Villa",
+      "address": "Programmeringsgatan 37",
+      "price": "1500000",
+      "rooms": "5",
+      "area": "135"
+    },
+    {
+      "id": 19,
+      "type": "Hus",
+      "address": "Fridofröjdvägen 50",
+      "price": "1300000",
+      "rooms": "4",
+      "area": "115"
+    },
+    {
+      "id": 20,
+      "type": "Lägenhet",
+      "address": "Grafikvägen 25",
+      "price": "1000000",
+      "rooms": "3",
+      "area": "82"
+    }
+  ]
+}
