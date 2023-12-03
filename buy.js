@@ -88,8 +88,27 @@ export default function buy() {
 
 }
 
+// Test visa ett modal fönster med titel och innehåll vid 
+function showModal(title, content, hus) {
+  let modalContainer = $('<div class="modal-container"><div class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal()">&times;</span><div class="modal-body"><h2>' + title + '</h2>' + content + '</div></div></div></div>');
+  modalContainer.css('display', 'flex');
+  modalContainer.css('align-items', 'center');
+  modalContainer.css('justify-content', 'center');
 
+  let visaIntresseBtn = $('<button class="btn btn-primary visa-intresse-btn">Visa Intresse</button>');
+  visaIntresseBtn.on('click', function () {
+    showInterestModal(hus);
+  });
 
+  modalContainer.find('.modal-body').append(visaIntresseBtn);
+
+  $('body').append(modalContainer);
+
+  let closeModalButton = modalContainer.find('.close-modal');
+  closeModalButton.on('click', function () {
+    closeModal();
+  });
+}
 
 // När sidan laddas  så körs funktionen buy
 $(document).ready(function () {
