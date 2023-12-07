@@ -167,7 +167,11 @@ $(document).on('submit', '#filterForm', function (e) {
   });
 });
 
+<<<<<<< Updated upstream
 // Funktion för att uppdatera visning av hus när filter används """ Se över kod består till stor del av buy funktionen bör återanvända gemensam kod bättre i funktion """
+=======
+// Funktion för att uppdatera visning av hus när filter används """ Se över kod består till stor del av buy bör återanvända gemensam kod bättre i funktion """
+>>>>>>> Stashed changes
 function updateHousesDisplay(houses) {
   $('.hus-container').empty();
 
@@ -198,7 +202,10 @@ function updateHousesDisplay(houses) {
                           <p>Utgångspris: ${hus.price}</p>
                           <p>Antal rum: ${hus.rooms}</p>
                           <p>Boarea: ${hus.area}</p>`;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
       showModal(hus.address, modalContent, hus);
     });
 
