@@ -1,3 +1,5 @@
+//Lägg till Trevor Clarkson - mäklare 
+
 const users = [
   {
     id: 1,
@@ -11,6 +13,13 @@ const users = [
     username: "sara",
     password: 2345,
     name: "Sara",
+    number: 112
+  },
+  {
+    id: 3,
+    username: "adminTrevor",
+    password: 5787,
+    name: "Trevor Clarkson",
     number: 112
   }
 ]

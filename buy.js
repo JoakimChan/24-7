@@ -43,12 +43,20 @@ export default function buy() {
             buttonsContainer.hide();
           });
 
-          // Händelse för att visa detaljerad information om huset vid klick
+          // Händelse för att visa detaljerad information om huset vid klick - edit: har lagt till mer info om bostad 
           let husBild = husInfo.find('.hus-bild');
           husBild.on('click', function () {
             let modalContent = `<p>Utgångspris: ${hus.price}</p>
                                 <p>Antal rum: ${hus.rooms}</p>
-                                <p>Boarea: ${hus.area}</p>`;
+                                <p>Boarea: ${hus.area}</p>
+                                <p>${hus.Balcony}</p>
+                                <p>${hus.Outdoors}</p>
+                                <p>Våning/våningar: ${hus.Floor}</p>
+                                <p>${hus.Elevator}</p>
+                                <p>Byggnadsår: ${hus.yearOfBuilding}</p>
+                                <p>${hus.Storehouse}</p>
+                                <p>${hus.ParkingLot}</p>
+                                <p>${hus.Courtyard}</p>`;
             showModal(hus.address, modalContent);
 
             let visaIntresseBtn = $('<button class="btn btn-primary visa-intresse-btn">Visa Intresse</button>');
@@ -191,13 +199,22 @@ function updateHousesDisplay(houses) {
       buttonsContainer.hide();
     });
 
-    // Händelse för att visa detaljerad information om huset vid klick
+    // Händelse för att visa detaljerad information om huset vid click - edit: skrev mer info om bostäderna - ändrade också namn i json filen
     let husBild = husInfo.find('.hus-bild');
     husBild.on('click', function () {
       let modalContent = `<p>Typ: ${hus.type}</p>
                           <p>Utgångspris: ${hus.price}</p>
                           <p>Antal rum: ${hus.rooms}</p>
-                          <p>Boarea: ${hus.area}</p>`;
+                          <p>Boarea: ${hus.area}</p>
+                          <p>${hus.Balcony}</p>
+                          <p>${hus.Outdoors}</p>
+                          <p>Våning/våningar: ${hus.Floor}</p>
+                          <p>${hus.Elevator}</p>
+                          <p>Byggnadsår: ${hus.yearOfBuilding}</p>
+                          <p>${hus.Storehouse}</p>
+                          <p>${hus.ParkingLot}</p>
+                          <p>${hus.Courtyard}</p>
+                          `;
 
       showModal(hus.address, modalContent, hus);
     });
@@ -221,12 +238,12 @@ function updateHousesDisplay(houses) {
 
 
 
-// Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter vall kan raderas senare 
+// Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter val kan raderas senare 
 const testFilters = {
   type: 'Lägenhet',
-  // price: '900000',  
+  price: '900000',  
   rooms: '3',
-  // area: '87'  
+  area: '87'  
 };
 
 getFilteredHouses(testFilters).then(houses => {
