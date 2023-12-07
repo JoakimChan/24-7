@@ -241,9 +241,9 @@ function updateHousesDisplay(houses) {
 // Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter val kan raderas senare 
 const testFilters = {
   type: 'Lägenhet',
-  price: '900000',  
+  // price: '900000',  
   rooms: '3',
-  area: '87'  
+  // area: '87'  
 };
 
 getFilteredHouses(testFilters).then(houses => {
