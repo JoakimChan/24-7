@@ -1,4 +1,4 @@
-const houses = [
+export const houses = [
   {
     "id": 1,
     "type": "Hus",
