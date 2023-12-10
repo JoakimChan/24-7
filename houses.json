@@ -6,7 +6,15 @@
       "address": "Topvägen 41",
       "price": "1000000",
       "rooms": "4",
-      "area": "130"
+      "area": "130",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "3",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "2022",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Garage",
+      "Courtyard": "Tomt"
     },
     {
       "id": 2,
@@ -14,7 +22,15 @@
       "address": "Kunskapsvägen 50",
       "price": "750000",
       "rooms": "2",
-      "area": "75"
+      "area": "75",
+      "Balcony": "Balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "6",
+      "Elevator": "Hiss",
+      "YearOfBuilding": "1999",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 3,
@@ -22,7 +38,15 @@
       "address": "Villaville kulla 2",
       "price": "1500000",
       "rooms": "5",
-      "area": "180"
+      "area": "180",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "2",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1980",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 4,
@@ -30,7 +54,15 @@
       "address": "Mariegatan 75",
       "price": "900000",
       "rooms": "3",
-      "area": "90"
+      "area": "90",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1890",
+      "Storehouse": "Jordkälla",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 5,
@@ -38,7 +70,15 @@
       "address": "Torevägen 58",
       "price": "1000000",
       "rooms": "4",
-      "area": "110"
+      "area": "110",
+      "Balcony": "Balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "3",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1960",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Ingen parkering",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 6,
@@ -46,7 +86,15 @@
       "address": "Kalasvägen 23",
       "price": "1100000",
       "rooms": "4",
-      "area": "140"
+      "area": "140",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "3",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1970",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 7,
@@ -54,7 +102,15 @@
       "address": "Elvägen 1",
       "price": "1700000",
       "rooms": "6",
-      "area": "190"
+      "area": "190",
+      "Balcony": "Balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "2",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "2000",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Garage",
+      "Courtyard": "Tomt"
     },
     {
       "id": 8,
@@ -62,7 +118,15 @@
       "address": "Technogatan 30",
       "price": "1000000",
       "rooms": "3",
-      "area": "90"
+      "area": "90",
+      "Balcony": "Balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "7",
+      "Elevator": "Hiss",
+      "Year of building": "2023",
+      "Storehouse": "Förråd",
+      "Parking lot": "Garage",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 9,
@@ -70,7 +134,15 @@
       "address": "Lockelookvägen 53",
       "price": "1400000",
       "rooms": "4",
-      "area": "110"
+      "area": "110",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1860",
+      "Storehouse": "Jordkälla",
+      "Parking lot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 10,
@@ -78,7 +150,15 @@
       "address": "Triptraptrullgatan 10",
       "price": "800000",
       "rooms": "3",
-      "area": "80"
+      "area": "80",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1968",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Ingen parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 11,
@@ -86,7 +166,15 @@
       "address": "Skyrocketvägen 48",
       "price": "950000",
       "rooms": "3",
-      "area": "79"
+      "area": "79",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "4",
+      "Elevator": "Hiss",
+      "YearOfBuilding": "2015",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 12,
@@ -94,7 +182,15 @@
       "address": "Booleangatan 55",
       "price": "1200000",
       "rooms": "4",
-      "area": "100"
+      "area": "100",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "2",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "2017",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Garage",
+      "Courtyard": "Tomt"
     },
     {
       "id": 13,
@@ -102,7 +198,15 @@
       "address": "Bergodalbanevägen 40",
       "price": "1500000",
       "rooms": "4",
-      "area": "130"
+      "area": "130",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "3",
+      "Elevator": "Hiss",
+      "YearOfBuilding": "2020",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Garage",
+      "Courtyard": "Tomt"
     },
     {
       "id": 14,
@@ -110,7 +214,15 @@
       "address": "Muffingatan 21",
       "price": "650000",
       "rooms": "2",
-      "area": "55"
+      "area": "55",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "2",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1888",
+      "Storehouse": "Jordkälla",
+      "ParkingLot": "Ingen parkering",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 15,
@@ -118,7 +230,15 @@
       "address": "Dragondalsgatan",
       "price": "1200000",
       "rooms": "3",
-      "area": "100"
+      "area": "100",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "2003",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 16,
@@ -126,7 +246,15 @@
       "address": "Krokodilvägen 39",
       "price": "900000",
       "rooms": "3",
-      "area": "90"
+      "area": "90",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "2005",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 17,
@@ -134,7 +262,15 @@
       "address": "Spacevägen",
       "price": "900000",
       "rooms": "3",
-      "area": "87"
+      "area": "87",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "1",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1970",
+      "Storehouse": "Inget förråd",
+      "Parking lot": "Ingen parkering",
+      "Courtyard": "Ingen innergård"
     },
     {
       "id": 18,
@@ -142,7 +278,15 @@
       "address": "Programmeringsgatan 37",
       "price": "1500000",
       "rooms": "5",
-      "area": "135"
+      "area": "135",
+      "Balcony": "Balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "4",
+      "Elevator": "Hiss",
+      "YearOfBuilding": "2023",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Garage",
+      "Courtyard": "Tomt"
     },
     {
       "id": 19,
@@ -150,7 +294,15 @@
       "address": "Fridofröjdvägen 50",
       "price": "1300000",
       "rooms": "4",
-      "area": "115"
+      "area": "115",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Ingen uteplats",
+      "Floor": "2",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1970",
+      "Storehouse": "Inget förråd",
+      "ParkingLot": "Ingen parkering",
+      "Courtyard": "Tomt"
     },
     {
       "id": 20,
@@ -158,7 +310,15 @@
       "address": "Grafikvägen 25",
       "price": "1000000",
       "rooms": "3",
-      "area": "82"
+      "area": "82",
+      "Balcony": "Ingen balkong",
+      "Outdoors": "Uteplats",
+      "Floor": "5",
+      "Elevator": "Ingen hiss",
+      "YearOfBuilding": "1985",
+      "Storehouse": "Förråd",
+      "ParkingLot": "Ingen parkering",
+      "Courtyard": "Ingen innergård"
     }
   ]
 }

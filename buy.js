@@ -43,12 +43,20 @@ export default function buy() {
             buttonsContainer.hide();
           });
 
-          // Händelse för att visa detaljerad information om huset vid klick
+          // Händelse för att visa detaljerad information om huset vid klick - edit: har lagt till mer info om bostad 
           let husBild = husInfo.find('.hus-bild');
           husBild.on('click', function () {
             let modalContent = `<p>Utgångspris: ${hus.price}</p>
                                 <p>Antal rum: ${hus.rooms}</p>
-                                <p>Boarea: ${hus.area}</p>`;
+                                <p>Boarea: ${hus.area}</p>
+                                <p>${hus.Balcony}</p>
+                                <p>${hus.Outdoors}</p>
+                                <p>Våning/våningar: ${hus.Floor}</p>
+                                <p>${hus.Elevator}</p>
+                                <p>Byggnadsår: ${hus.yearOfBuilding}</p>
+                                <p>${hus.Storehouse}</p>
+                                <p>${hus.ParkingLot}</p>
+                                <p>${hus.Courtyard}</p>`;
             showModal(hus.address, modalContent);
 
             let visaIntresseBtn = $('<button class="btn btn-primary visa-intresse-btn">Visa Intresse</button>');
@@ -167,11 +175,7 @@ $(document).on('submit', '#filterForm', function (e) {
   });
 });
 
-<<<<<<< Updated upstream
 // Funktion för att uppdatera visning av hus när filter används """ Se över kod består till stor del av buy funktionen bör återanvända gemensam kod bättre i funktion """
-=======
-// Funktion för att uppdatera visning av hus när filter används """ Se över kod består till stor del av buy bör återanvända gemensam kod bättre i funktion """
->>>>>>> Stashed changes
 function updateHousesDisplay(houses) {
   $('.hus-container').empty();
 
@@ -195,17 +199,23 @@ function updateHousesDisplay(houses) {
       buttonsContainer.hide();
     });
 
-    // Händelse för att visa detaljerad information om huset vid klick
+    // Händelse för att visa detaljerad information om huset vid click - edit: skrev mer info om bostäderna - ändrade också namn i json filen
     let husBild = husInfo.find('.hus-bild');
     husBild.on('click', function () {
       let modalContent = `<p>Typ: ${hus.type}</p>
                           <p>Utgångspris: ${hus.price}</p>
                           <p>Antal rum: ${hus.rooms}</p>
-                          <p>Boarea: ${hus.area}</p>`;
-<<<<<<< Updated upstream
+                          <p>Boarea: ${hus.area}</p>
+                          <p>${hus.Balcony}</p>
+                          <p>${hus.Outdoors}</p>
+                          <p>Våning/våningar: ${hus.Floor}</p>
+                          <p>${hus.Elevator}</p>
+                          <p>Byggnadsår: ${hus.yearOfBuilding}</p>
+                          <p>${hus.Storehouse}</p>
+                          <p>${hus.ParkingLot}</p>
+                          <p>${hus.Courtyard}</p>
+                          `;
 
-=======
->>>>>>> Stashed changes
       showModal(hus.address, modalContent, hus);
     });
 
@@ -228,7 +238,7 @@ function updateHousesDisplay(houses) {
 
 
 
-// Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter vall kan raderas senare 
+// Endast för manuell test av filter funktionen JSOn server detta skall komma ifrån användarens filter val kan raderas senare 
 const testFilters = {
   type: 'Lägenhet',
   // price: '900000',  
