@@ -1,5 +1,5 @@
 //ska kunna filtrera valen av önskad bostad
-
+export default function filter() {
 let filter = {
   type: [],
   price: [],
@@ -13,6 +13,8 @@ let filter = {
   Storehouse: [],
   ParkingLot: [],
   Courtyard: []
-}
+  }
 
+
+}
 

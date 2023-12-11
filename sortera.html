@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filtrera</title>
-  <script type="module" src="buy.js"></script>
 </head>
 
 <body>
   
 
 
-
   
-<form>
+<form id="bostad">
     <section class="FiltreraBostad">
     <fieldset>
     <legend>Filtrera sökning:</legend>
@@ -174,10 +172,47 @@
 
 </fieldset>
 </section>
+
+
+<img src="home page house.jpg" alt="">
+
 </form>
 
+<div id="result"></div>
+<script>
+//ger value till varje element
+  function displayRadioValue() {
+      var ele = document.getElementsByName('väljBostad');
+
+      for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked)
+          document.getElementById("result").innerHTML
+            = ele[i].value;
+      }
+    }
 
 
+  document.getElementById("bostad").addEventListener("submit", function (event) {
+    event.preventDefault();
+    let price = document.getElementById("price").value;
+    let rooms = document.getElementById("rooms").value;
+    let area = document.getElementById("area").value;
+    let Balcony = document.getElementById("Balcony").value;
+    let Outdoors = document.getElementById("Outdoors").value;
+    let Floor = document.getElementById("Floor").value;
+    let Elevator = document.getElementById("Elevator").value;
+    let YearOfBuilding = document.getElementById("YearOfBuilding").value;
+    let Storehouse = document.getElementById("Storehouse").value;
+    let ParkingLot = document.getElementById("ParkingLot").value;
+    let Courtyard = document.getElementById("Courtyard").value;
+    alert(price, rooms, area, Balcony, Outdoors, Floor, Elevator, YearOfBuilding, Storehouse, ParkingLot, Courtyard);
+  });
+
+</script>
+
+<div id="hus-container"></div>
+<script type="module" src="buy.js"></script>
+<script type="module" src="filter.js"></script>
 </body>
 
 </html>
