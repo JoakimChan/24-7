@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
     });
 
-    // Visa de filtrerade husen
+    // Visa de filtrerade husen baserat på valda filtren som laggras i objektet filteredHouses ifrån filter formuläret
     displayHouses(filteredHouses);
   });
 });
