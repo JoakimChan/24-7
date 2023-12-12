@@ -1,5 +1,5 @@
-#home>img {
-  background-image: url(../image/home\ page\ house.jpg);
+body {
+  background-image: url(https://live.staticflickr.com/3797/10798143964_5fc2e95a00_b.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -48,9 +48,10 @@
   section> :nth-child(3) {
     display: none;
   }
+
 }
 
-#säljFormulär {
+#saljFormular {
   text-align: center;
   background-color: rgb(205, 238, 251);
   padding: 3px;
@@ -64,7 +65,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#formulärBtn {
+#formularBtn {
   width: 20vh;
   height: 5vh;
   margin-top: 2vh;
@@ -73,14 +74,14 @@
   background-color: rgb(169, 217, 247);
 }
 
-#köpText {
+#kopText {
   text-align: center;
   margin-top: 15vh;
   color: rgb(44, 44, 108);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#mäklare {
+#maklare {
   text-align: center;
   margin-top: 15vh;
   color: rgb(44, 44, 108);
@@ -88,7 +89,7 @@
   font-size: large;
 }
 
-#mäklarNamn {
+#maklareNamn {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(44, 44, 108);
@@ -116,11 +117,22 @@ nav {
 }
 
 
+header>.main-nav {
+  background-color: rgba(190, 223, 162, 0.848);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea015264-1416-4cb6-9092-7b722f6d6953/df8o06q-650f3a9a-96f2-4cdb-ae37-85bb81ad3c49.png/v1/fill/w_1280,h_960,q_80,strp/colorful_gradient_texture_or_bkg_v2_by_thestockwarehouse_df8o06q-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWEwMTUyNjQtMTQxNi00Y2I2LTkwOTItN2I3MjJmNmQ2OTUzXC9kZjhvMDZxLTY1MGYzYTlhLTk2ZjItNGNkYi1hZTM3LTg1YmI4MWFkM2M0OS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.xDjigDbZaoVSzSWKRnQn5TeS1CBk_59JY8AcJ725XfQ);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4vh;
+}
+
 nav>a {
   color: rgb(28, 98, 228);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-decoration: none;
-  font-size: larger;
+  font-size:larger
+  
 }
 
 #default {
@@ -129,6 +141,19 @@ nav>a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(44, 44, 108);
 }
+
+.loginAdmin {
+  
+  position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    text-align: right;
+    margin-right: 10vh;
+    margin-top: 1vh; 
+}
+
+
 
 .modal-container {
   position: fixed;
