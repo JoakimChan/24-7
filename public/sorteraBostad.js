@@ -1,7 +1,8 @@
 //för att sortera bostäder beroende på pris, år-och annat
+import houses from "houses.json"
 
-
-var houses = [
+/*
+const houses = [
   {
     "id": 1,
     "type": "Hus",
@@ -383,9 +384,11 @@ var houses = [
     "phone": "0991123458"
   }
 ];
+*/
 
 
-/*
+
+
 //nyaste till äldsta annonsen 
 function compareByFormularN(a, b) {
   return b.id - a.id;
@@ -394,7 +397,7 @@ function compareByFormularN(a, b) {
 houses.sort(compareByFormularN);
 
 console.log(houses);
-*/
+
 
 
 

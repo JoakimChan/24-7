@@ -1,51 +1,113 @@
 <!DOCTYPE html>
 <html>
-<script type="module" src="sorteraBostad.js"></script>
 <body>
-
+<script type="module" src="houses.json"></script>
   <h3>Sortera bostad: </h3>
 
 
 
-  <label for="id">Annons:</label>
+  <label for="sortHouses">Sortera efter:</label>
 
-  <select name="id" id="id">
-  <option value="">-Välj ett alternativ-</option>
-  <option value="nyast">Nyast</option>
-  <option value="äldst">Äldst</option>
-  </select><br><br>
-
-
-
-  <label for="price">Pris:</label>
-  
-  <select name="price" id="price">
-    <option value="">-Välj ett alternativ-</option>
-    <option value="billigast">Billigast</option>
-    <option value="dyrast">Dyrast</option>
-    </select><br><br>
+  <section name="id" id="sortHouses">
+  <input value="Nyaste annonsen" type="button" onclick="compareByFormularN()" id="newAd"></input><br>
+  <input value="Äldsta annonsen" type="button" onclick="compareByFormularO()" id="oldAd"></input><br>
+  <input value="Billigaste bostaden" type="button" onclick="compareByPriceC()" id="cheapHouse"></input><br>
+  <input value="Dyraste bostaden" type="button" onclick="compareByPriceE()" id="expensiveHouse"></input><br>
+  <input value="Minsta bostaden (kvm)" type="button" onclick="compareByAreaS()" id="smallHouse"></input><br>
+  <input value="Största bostaden (kvm)" type="button" onclick="compareByAreaB()" id="bigHouse"></input><br>
+  <input value="Nyaste byggnaden" type="button" onclick="compareByYearN()" id="newHouse"></input><br>
+  <input value="Äldsta byggnaden" type="button" onclick="compareByYearO()" id="oldHouse"></input>
+  </section><br><br>
 
 
-    <label for="area">Area(kvm):</label>
+  <script>
+
+      
+      //nyaste till äldsta annonsen 
+      function compareByFormularN(a, b) {
+      return b.id - a.id;
+    }
+
+       houses.sort(compareByFormularN);
+
+       console.log(houses);
+
     
-    <select name="area" id="area">
-      <option value="">-Välj ett alternativ-</option>
-      <option value="minsta">Minsta</option>
-      <option value="största">Största</option>
-    </select><br><br>
+
+        //äldsta till nyaste annonsen 
+        function compareByFormularO(a, b) {
+            return a.id - b.id;
+        }
+
+        houses.sort(compareByFormularO);
+
+        console.log(houses);
+
+
+         //billigaste till dyraste bostaden
+         function compareByPriceC(a, b) {
+            return a.price - b.price;
+        }
+
+        houses.sort(compareByPriceC);
+
+        console.log(houses);
+
+
+         //dyraste till billigaste bostaden 
+          function compareByPriceE(a, b) {
+            return b.price - a.price;
+        }
+
+          houses.sort(compareByPriceE);
+
+          console.log(houses);
+
+       
+         //minsta till största area 
+            function compareByAreaS(a, b) {
+              return a.area - b.area;
+        }
+
+            houses.sort(compareByAreaS);
+
+            console.log(houses);
+
+
+
+           // största till minsta area
+            function compareByAreaB(a, b) {
+              return b.area - a.area;
+        }
+
+              houses.sort(compareByAreaB);
+
+              console.log(houses);
 
 
 
 
-    <label for="year">Årtal:</label>
-    
-    <select name="year" id="year">
-      <option value="">-Välj ett alternativ-</option>
-      <option value="nyast">Nyast</option>
-      <option value="äldst">Äldst</option>
-    </select>
+             // nyaste till äldsta byggnaden
+              function compareByYearN(a, b) {
+                return b.year - a.year;
+         }
+
+              houses.sort(compareByYearN);
+
+              console.log(houses);
 
 
+
+             // äldsta till nyaste bostaden 
+              function compareByYearO(a, b) {
+                return a.year - b.year;
+          }
+
+              houses.sort(compareByYearO);
+
+              console.log(houses);
+
+  </script>
 
 
 </body>
