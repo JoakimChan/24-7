@@ -67,31 +67,20 @@
 
 <label for="balkongBostad">Balkong: </label>
 
-<select name="BalkongBostad" id="Balcony">
+<select name="BalkongBostad" id="balcony">
   <option value="">--välj ett alternativ--</option>
   <option value="Balkong">Balkong</option>
   <option value="Ingen balkong">Ingen balkong</option>
-</select><br><br>
-
-
-
-
-
-<label for="uteplatsBostad">Uteplats: </label>
-
-<select name="Uteplats" id="Outdoors">
-  <option value="">--välj ett alternativ--</option>
   <option value="Uteplats">Uteplats</option>
-  <option value="Ingen uteplats">Ingen uteplats</option>
+  <option value="Balkong och uteplats">Balkong och uteplats</option>
+  <option value="Ingen balkong eller uteplats">Ingen balkong eller uteplats</option>
 </select><br><br>
-
-
 
 
 
 <label for="våningBostad">Våning/våningar: </label>
 
-<select name="Våning" id="Floor">
+<select name="Våning" id="floor">
   <option value="">--välj ett alternativ--</option>
   <option value="1">1</option>
   <option value="2">2</option>
@@ -108,7 +97,7 @@
 
 <label for="hissBostad">Hiss: </label>
 
-<select name="Hiss" id="Elevator">
+<select name="Hiss" id="elevator">
   <option value="">--välj ett alternativ--</option>
   <option value="Hiss">Hiss</option>
   <option value="Ingen hiss">Ingen hiss</option>
@@ -118,9 +107,9 @@
 
 
 
-<label for="areaBostad">Byggnadsår: </label>
+<label for="årBostad">Byggnadsår: </label>
 
-<input type="text" id="YearOfBuilding" name="YearOfBuilding" minlength="4" maxlength="4" size="10" /> 
+<input type="text" id="year" name="year" minlength="4" maxlength="4" size="10" /> 
 <br><br>
 
 
@@ -129,7 +118,7 @@
 
 <label for="förrådBostad">Förråd/jordkälla: </label>
 
-<select name="Förråd" id="Storehouse">
+<select name="Förråd" id="storehouse">
   <option value="">--välj ett alternativ--</option>
   <option value="Förråd">Förråd</option>
   <option value="Inget förråd">Inget förråd</option>
@@ -142,7 +131,7 @@
 
 <label for="parkeringBostad">Parkering/garage: </label>
 
-<select name="Parkering" id="ParkingLot">
+<select name="Parkering" id="parking">
   <option value="">--välj ett alternativ--</option>
   <option value="Parkering">Parkering</option>
   <option value="Ingen parkering">Ingen parkering</option>
@@ -155,7 +144,7 @@
 
 <label for="innergårdBostad">Innergård/tomt: </label>
 
-<select name="Innergård" id="Courtyard">
+<select name="Innergård" id="garden">
   <option value="">--välj ett alternativ--</option>
   <option value="Innergård">Innergård</option>
   <option value="Ingen innergård">Ingen innergård</option>
@@ -174,7 +163,7 @@
 </section>
 
 
-<img src="home page house.jpg" alt="">
+<img src="home page house.jpg">
 
 </form>
 
@@ -197,15 +186,14 @@
     let price = document.getElementById("price").value;
     let rooms = document.getElementById("rooms").value;
     let area = document.getElementById("area").value;
-    let Balcony = document.getElementById("Balcony").value;
-    let Outdoors = document.getElementById("Outdoors").value;
-    let Floor = document.getElementById("Floor").value;
-    let Elevator = document.getElementById("Elevator").value;
-    let YearOfBuilding = document.getElementById("YearOfBuilding").value;
-    let Storehouse = document.getElementById("Storehouse").value;
-    let ParkingLot = document.getElementById("ParkingLot").value;
-    let Courtyard = document.getElementById("Courtyard").value;
-    alert(price, rooms, area, Balcony, Outdoors, Floor, Elevator, YearOfBuilding, Storehouse, ParkingLot, Courtyard);
+    let balcony = document.getElementById("balcony").value;
+    let floor = document.getElementById("floor").value;
+    let elevator = document.getElementById("elevator").value;
+    let year = document.getElementById("year").value;
+    let storehouse = document.getElementById("storehouse").value;
+    let parking = document.getElementById("parking").value;
+    let garden = document.getElementById("garden").value;
+    alert(price, rooms, area, balcony, floor, elevator, year, storehouse, parking, garden);
   });
 
 </script>
